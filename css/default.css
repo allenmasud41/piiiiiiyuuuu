@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  overflow: auto;
+  font-family: 'Inconsolata', monospace !important; /* Added fallback font */
+  background: black;
+}
+
+#mainDiv {
+  width: 100%;
+  height: 100%;
+}
+
+#loveHeart {
+  float: left;
+  width: 670px;
+  height: 625px;
+}
+
+/* Custom Button Styles */
+.custom-button {
+  padding: 10px 20px;
+  background-color: #58055f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.custom-button:hover {
+  background-color: #45a049;
+}
+
+.custom-button:active {
+  background-color: #3e8e41;
+}
+
+#garden {
+  width: 100%;
+  height: 100%;
+}
+
+#elapseClock {
+  text-align: right;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+#words {
+  width: 500px;
+  font-size: 24px;
+  color: #666;
+}
+
+#messages {
+  display: none;
+}
+
+#elapseClock .digit {
+  font-family: "digit";
+  font-size: 36px;
+}
+
+#loveu {
+  padding: 5px;
+  font-size: 22px;
+  margin-top: 30px;
+  margin-right: 0px;
+  text-align: center;
+  display: none;
+}
+
+#loveu .signature {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#clickSound {
+  display: none;
+}
+
+/* Code Container Styles */
+#code {
+  float: left;
+  width: 440px;
+  height: 400px;
+  color: #333;
+  font-size: 12px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#code .string {
+  color: #2a36ff;
+}
+
+#code .keyword {
+  color: #7f0055;
+  font-weight: bold;
+}
+
+#code .placeholder {
+  margin-left: 15px;
+}
+
+#code .space {
+  margin-left: 7px;
+}
+
+#code .comments {
+  color: #3f7f5f;
+}
+
+/* Footer & Copyright */
+#copyright {
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  color: #666;
+}
+
+#errorMsg {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+
+#copyright a {
+  color: #666;
+}
+
+/* Canvas Styling */
+canvas {
+  cursor: crosshair;
+  display: block;
+}
+
+/* Absolute Positioning */
+.absolute {
+  position: absolute;
+  padding: 8px;
+  z-index: 5;
+  right: 190px;
+}
+
+/* Responsive Design */
+.small_device {
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .small_device {
+    display: none;
+  }
+
+  /* Additional Adjustments for Smaller Screens */
+  body {
+    font-size: 14px; /* Adjust font size for small devices */
+  }
+
+  #loveHeart {
+    width: 100%; /* Make loveHeart div full width on small screens */
+    height: auto; /* Auto adjust height */
+  }
+
+  #words {
+    font-size: 18px; /* Smaller font size for words section */
+    width: 100%;
+  }
+
+  #code {
+    width: 100%; /* Make code section take full width on small screens */
+  }
+
+  #elapseClock {
+    font-size: 16px; /* Adjust clock font size */
+  }
+}
